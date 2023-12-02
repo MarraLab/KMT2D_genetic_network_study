@@ -44,7 +44,7 @@ sample_msi_status <- data_clinical_sample %>%
     TRUE ~ "Unknown")) %>%
   dplyr::select(Tumor_Sample_Barcode = SAMPLE_ID, MSI_SCORE_MANTIS, MSI_SENSOR_SCORE, MSI_status) %>%
   mutate(TCGA_type = data_key$TCGA_project[i]) %>%
-  write_csv(paste0(tcga_dir, "Analysis/KMT2D_project/TCGA/", data_key$TCGA_project[i], "_sample_MSI_status.csv"))
+  write_csv(paste0(tcga_dir, "", data_key$TCGA_project[i], "_sample_MSI_status.csv"))
 
 msi_plot <- ggplot(sample_msi_status, aes( x = MSI_SCORE_MANTIS, y = MSI_SENSOR_SCORE))+
   geom_point(aes(colour = MSI_status)) +
@@ -105,4 +105,4 @@ sample_combined_status <- sample_mutation_status %>%
       TRUE ~ "Other")
     PATIENT_ID = str_sub(Tumor_Sample_Barcode, 0, 12)) %>%
     dplyr::select(PATIENT_ID, everything()) %>%
-    write_csv(paste0(tcga_dir, "Analysis/KMT2D_project/TCGA/",data_key$TCGA_project[i],"_sample_status.csv"))
+    write_csv(paste0(tcga_dir, "TCGA_COADREAD_sample_status.csv"))
