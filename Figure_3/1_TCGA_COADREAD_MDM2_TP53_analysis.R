@@ -1,5 +1,5 @@
 #############################################################
-# Figure 4
+# Figure 3
 # TCGA COAD cohort analysis for MDM2 and TP53 - find samples
 #############################################################
 library(pacman)

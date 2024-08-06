@@ -1,5 +1,5 @@
 #############################################################
-# Figure 4
+# Figure 3
 # TCGA-STAD cohort analysis for NDUFB5 - find samples
 #############################################################
 library(pacman)

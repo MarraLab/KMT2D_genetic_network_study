@@ -1,5 +1,5 @@
 #############################################################
-# Figure 5
+# Figure 4
 # TCGA COAD/READ cohort - Mutational signature analysis 
 # and chronological age comparison
 #############################################################

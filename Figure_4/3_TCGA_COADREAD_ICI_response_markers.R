@@ -1,5 +1,5 @@
 #############################################################
-# Figure 5
+# Figure 4
 # TCGA COAD/READ cohort - Annotating KMT2D WT and LOF mutations and MSI status
 # TMB, Neoantigen, HRD score, TUBA1B, CD274, CTLA4, M1M2 score,
 # Cytolytic activity score, INF-y signature score

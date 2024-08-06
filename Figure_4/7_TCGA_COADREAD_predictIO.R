@@ -1,5 +1,5 @@
 #############################################################
-# Figure 5
+# Figure 4
 # TCGA COAD/READ cohort - Cibersort immune cell composition analysis
 #############################################################
 library(pacman)

@@ -1,9 +1,9 @@
 #############################################################
-# Figure 3
+# Figure 6
 # Extract SRA fastq files for Expansion Hunter Denovo analysis
 #############################################################
 # # Sample SRA ID lists
-all_wgs_samples=(SRR8639191 SRR8652098 SRR8670708 SRR8652101 SRR8652121 SRR8652136 SRR8670772 SRR11680468 SRR11680467 SRR8670762 SRR8670679 SRR8670673 SRR8670700 SRR8639227 SRR8639145 SRR8652076)
+all_wgs_samples=(SRR8639191 SRR8652098 SRR8670708 SRR8652101 SRR8652121 SRR8652136 SRR11680468 SRR11680467 SRR8670762 SRR8670673 SRR8670700 SRR8639227 SRR8639145 SRR8652076)
 
 # Prefetch 
 for SRA_ID in ${all_wgs_samples[@]}

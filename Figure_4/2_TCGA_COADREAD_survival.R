@@ -1,5 +1,5 @@
 #############################################################
-# Figure 5
+# Figure 4
 # TCGA COAD/READ cohort - Annotating KMT2D WT and LOF mutations and MSI status
 #############################################################
 library(pacman)

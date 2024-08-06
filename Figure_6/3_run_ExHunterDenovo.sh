@@ -1,9 +1,9 @@
 #############################################################
-# Figure 3
+# Figure 6
 # Run Expansion Hunter Denovo analysis
 #############################################################
 # Sample SRA ID lists
-all_wgs_samples=(SRR8639191 SRR8652098 SRR8670708 SRR8652101 SRR8652121 SRR8652136 SRR8670772 SRR11680468 SRR11680467 SRR8670762 SRR8670679 SRR8670673 SRR8670700 SRR8639227 SRR8639145 SRR8652076)
+all_wgs_samples=(SRR8639191 SRR8652098 SRR8670708 SRR8652101 SRR8652121 SRR8652136 SRR11680468 SRR11680467 SRR8670762 SRR8670673 SRR8670700 SRR8639227 SRR8639145 SRR8652076)
 
 # Expansion detection by ExpansionHunter and exSTRa
 # Expansions are identified for broken and non-broken (TA)n from the HCT116 and KM12 whole genome sequencing data by ExpansionHunter v.3.2.225,47. The supporting reads for expansions are visualized by GraphAlignmentViewer (https://github.com/Illumina/GraphAlignmentViewer). Empirical cumulative distribution function for the TA repeat located at hg19 coordinates chr8:106950919–106950985 was generated using exSTRa v.0.89.026 and Bio-STR-exSTRa v.1.1.0 using the default parameter settings.
@@ -32,19 +32,6 @@ do
 done
 
 # 2. copy paste the following into a manifest 
-vim manifest_MSI_LOF_WT.tsv
-SRR8639191  case  str_profiles/SRR8639191.str_profile.json
-SRR8652098  case  str_profiles/SRR8652098.str_profile.json
-SRR8652121  case  str_profiles/SRR8652121.str_profile.json
-SRR8652136  case  str_profiles/SRR8652136.str_profile.json
-SRR8670708  case  str_profiles/SRR8670708.str_profile.json
-SRR8652101  case  str_profiles/SRR8652101.str_profile.json
-SRR11680468 case str_profiles/SRR11680468.str_profile.json
-SRR11680467 case str_profiles/SRR11680467.str_profile.json
-SRR8670762  case  str_profiles/SRR8670762.str_profile.json
-SRR8670772  control   str_profiles/SRR8670772.str_profile.json
-SRR8670679  control   str_profiles/SRR8670679.str_profile.json
-
 vim manifest_MSI_LOF_MSS_WT.tsv
 SRR8639191  case  str_profiles/SRR8639191.str_profile.json
 SRR8652098  case  str_profiles/SRR8652098.str_profile.json
